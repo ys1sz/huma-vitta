@@ -475,6 +475,102 @@ transform:translateY(-6px);
 }
 
 /* =========================================================
+   BENEFÍCIOS
+   ========================================================= */
+
+.section--benefits{
+
+background:linear-gradient(
+180deg,
+#fff 0%,
+var(--cor-bege) 100%
+);
+
+}
+
+.section-title-center{
+
+max-width:720px;
+
+margin:0 auto;
+
+text-align:center;
+
+}
+
+.section-title-center::after{
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.section-subtitle{
+
+max-width:700px;
+
+margin:28px auto 60px;
+
+text-align:center;
+
+font-size:1.05rem;
+
+line-height:1.8;
+
+color:var(--cor-texto-suave);
+
+}
+
+.benefits{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:28px;
+
+}
+
+.benefit{
+
+background:white;
+
+padding:32px;
+
+border-radius:20px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+transition:.35s;
+
+}
+
+.benefit:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 40px rgba(0,0,0,.09);
+
+}
+
+.benefit h3{
+
+color:var(--cor-bordo);
+
+margin-bottom:15px;
+
+font-size:1.2rem;
+
+}
+
+.benefit p{
+
+line-height:1.8;
+
+}
+
+/* =========================================================
    Cards de especialidades
    ========================================================= */
 .cards {
@@ -715,7 +811,13 @@ color:var(--cor-bege-escuro);
 /* =========================================================
    Responsivo
    ========================================================= */
-@media (max-width: 860px) {
+@media (max-width: 860px) .benefits{
+
+grid-template-columns:1fr;
+
+}
+
+{
   .split,
   .split--reverse {
     grid-template-columns: 1fr;
