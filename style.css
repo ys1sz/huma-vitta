@@ -806,64 +806,82 @@ line-height:1.8;
 /* =========================================================
    Footer
    ========================================================= */
+/* =========================================================
+   Footer
+========================================================= */
 
 .footer{
    background:var(--cor-marrom);
-   color:var(--cor-bege);
-   padding-top:4rem;
+   color:#f5ece5;
+   padding:70px 0 30px;
 }
 
 .footer__grid{
    display:grid;
-   grid-template-columns:2fr 1fr 1fr;  
-   gap:4rem;
-   padding-bottom:3rem;
+   grid-template-columns:repeat(3,1fr);
+   gap:60px;
 }
 
-.footer__brand h3{
-   color:white;
-   margin-bottom:1rem;
+.footer h3{
+   color:#fff;
+   font-size:1.7rem;
+   margin-bottom:18px;
 }
 
-.footer__brand p{
-   color:rgba(255,255,255,.75);
+.footer h4{
+   color:#fff;
+   margin-bottom:18px;
+   font-size:1.1rem;
+}
+
+.footer p{
+   color:#dbc9bc;
    line-height:1.8;
-   max-width:320px;
 }
 
-.footer__heading{
-   font-family:var(--fonte-corpo);
-   font-size:1rem;
-   font-weight:600;
-   color:white;
-   margin-bottom:1rem;
-}
-
-.footer__list{
+.footer__links{
    display:flex;
    flex-direction:column;
-   gap:.9rem;
+   gap:12px;
 }
 
-.footer__list li{
-   color:rgba(255,255,255,.75);
+.footer__links li{
+   list-style:none;
 }
 
-.footer__list a{
+.footer__links a{
+   color:#f5ece5;
    transition:.3s;
 }
 
-.footer__list a:hover{
+.footer__links a:hover{
    color:white;
-   padding-left:6px;
+   padding-left:5px;
 }
 
 .footer__bottom{
-   border-top:1px solid rgba(255,255,255,.12);
-   padding:1.5rem 0;
+   margin-top:60px;
+   padding-top:25px;
+   border-top:1px solid rgba(255,255,255,.15);
    text-align:center;
    font-size:.9rem;
-   color:rgba(255,255,255,.65);
+}
+
+.footer__bottom p{
+   margin:0;
+}
+
+@media(max-width:860px){
+   .footer__grid{
+   grid-template-columns:1fr;
+   gap:40px;
+   text-align:center;
+}
+
+.footer__links{
+   align-items:center;
+}
+
 }
 /* =========================================================
    Responsivo
