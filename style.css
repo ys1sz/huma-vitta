@@ -876,35 +876,46 @@ line-height:1.8;
    ========================================================= */
 @media (max-width: 860px) {
 
-  .benefits{
-    grid-template-columns:1fr;
-  }
-
-   .split__content{
-    width:100%;
+   .hero__trust{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:.8rem;
 }
 
-.split__content h2{
-    font-size:2rem;
-    word-break:normal;
+.hero__inner{
+    text-align:center;
 }
+
+.hero__actions{
+    justify-content:center;
+}
+
+.hero__text{
+    margin-inline:auto;
+}
+
    
-  .split,
-  .split--reverse {
+   .benefits{
     grid-template-columns: 1fr;
   }
 
+  .split,
+  .split--reverse{
+    grid-template-columns:1fr;
+  }
+
   .split__media,
-  .split--reverse .split__media {
-    order: -1;
+  .split--reverse .split__media{
+    order:-1;
   }
 
-  .media-frame {
-    aspect-ratio: 16 / 9;
+  .media-frame{
+    aspect-ratio:16/9;
   }
 
-  .cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
   .nav-toggle {
