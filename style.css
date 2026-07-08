@@ -634,6 +634,61 @@ line-height:1.8;
 }
 
 /* =========================================================
+   POR QUE ESCOLHER
+   ========================================================= */
+
+.section--benefits{
+    background:#fff;
+}
+
+.section-title-center{
+    max-width:700px;
+    margin:0 auto 18px;
+    text-align:center;
+}
+
+.section-title-center::after{
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.section-subtitle{
+    max-width:700px;
+    margin:0 auto 50px;
+    text-align:center;
+    font-size:1.05rem;
+    color:var(--cor-texto-suave);
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+.benefit{
+    background:white;
+    border:1px solid var(--cor-bege-escuro);
+    border-radius:20px;
+    padding:32px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.benefit:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--sombra);
+}
+
+.benefit h3{
+    margin-bottom:14px;
+}
+
+.benefit p{
+    line-height:1.8;
+}
+
+/* =========================================================
    Formulário de contato
    ========================================================= */
 .form {
