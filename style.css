@@ -839,23 +839,19 @@ line-height:1.8;
 }
 
 .footer__contact .icon{
+    width:18px;
+    height:18px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--cor-bege-escuro);
+    background:none;
+    border-radius:0;
+}
 
-width:18px;
-
-height:18px;
-
-background:none;
-
-border-radius:0;
-
-display:inline-flex;
-
-align-items:center;
-
-justify-content:center;
-
-color:var(--cor-bege-escuro);
-
+.footer__contact .icon svg{
+    width:18px;
+    height:18px;
 }
 
 .footer__contact a {
@@ -883,9 +879,7 @@ color:var(--cor-bege-escuro);
    Responsivo
    ========================================================= */
 @media (max-width: 860px) .benefits{
-
-grid-template-columns:1fr;
-
+   grid-template-columns:1fr;
 }
 
 {
