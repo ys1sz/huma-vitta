@@ -833,72 +833,65 @@ line-height:1.8;
 /* =========================================================
    Footer
    ========================================================= */
-.footer {
-  background-color: var(--cor-marrom);
-  color: var(--cor-bege-escuro);
-  padding-block:3rem;
+
+.footer{
+   background:var(--cor-marrom);
+   color:var(--cor-bege);
+   padding-top:4rem;
 }
 
-.footer__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-size: 0.85rem;
+.footer__grid{
+   display:grid;
+   grid-template-columns:2fr 1fr 1fr;  
+   gap:4rem;
+   padding-bottom:3rem;
 }
 
-.footer__contact {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  font-size: 0.85rem;
+.footer__brand h3{
+   color:white;
+   margin-bottom:1rem;
 }
 
-.footer__contact li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.footer__brand p{
+   color:rgba(255,255,255,.75);
+   line-height:1.8;
+   max-width:320px;
 }
 
-.footer__contact .icon{
-    width:18px;
-    height:18px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--cor-bege-escuro);
-    background:none;
-    border-radius:0;
+.footer__heading{
+   font-family:var(--fonte-corpo);
+   font-size:1rem;
+   font-weight:600;
+   color:white;
+   margin-bottom:1rem;
 }
 
-.footer__contact .icon svg{
-    width:18px;
-    height:18px;
+.footer__list{
+   display:flex;
+   flex-direction:column;
+   gap:.9rem;
 }
 
-.footer__contact a {
-  color: var(--cor-bege-escuro);
-  opacity: 0.9;
-  transition: opacity var(--transicao), color var(--transicao);
+.footer__list li{
+   color:rgba(255,255,255,.75);
 }
 
-.footer__contact a:hover {
-  opacity: 1;
-  color: var(--cor-branco);
+.footer__list a{
+   transition:.3s;
 }
 
-.footer__top {
-  color: var(--cor-bege-escuro);
-  opacity: 0.85;
-  transition: opacity var(--transicao);
+.footer__list a:hover{
+   color:white;
+   padding-left:6px;
 }
 
-.footer__top:hover {
-  opacity: 1;
+.footer__bottom{
+   border-top:1px solid rgba(255,255,255,.12);
+   padding:1.5rem 0;
+   text-align:center;
+   font-size:.9rem;
+   color:rgba(255,255,255,.65);
 }
-
 /* =========================================================
    Responsivo
    ========================================================= */
@@ -1013,4 +1006,13 @@ line-height:1.8;
     transform:translateY(-7px) rotate(-45deg);
   }
 
+   .footer__grid{
+      grid-template-columns:1fr;
+      gap:2.5rem;
+      text-align:center;
+   }
+   
+   .footer__brand p{
+      margin:auto;
+}
 }
