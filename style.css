@@ -85,23 +85,14 @@ h2 {
 }
 
 h2::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-bottom:0;
-
-width:70px;
-
-height:3px;
-
-background:var(--cor-bordo);
-
-border-radius:999px;
-
+   content:"";
+   position:absolute;
+   left:0;
+   bottom:0;
+   width:70px;
+   height:3px;
+   background:var(--cor-bordo);
+   border-radius:999px;
 }
 
 h3 {
@@ -152,6 +143,10 @@ p {
   font-weight:600;
   letter-spacing: 0.02em;
   transition: transform var(--transicao), background-color var(--transicao), color var(--transicao), box-shadow var(--transicao);
+}
+
+.btn:hover{
+   transform:translateY(-4px);
 }
 
 .btn--primary {
@@ -320,11 +315,16 @@ p {
 /* =========================================================
    Hero
    ========================================================= */
-.hero {
-  position: relative;
-  background: linear-gradient(180deg, var(--cor-bege) 0%, var(--cor-bege) 100%);
-  padding-block: clamp(6rem, 10vw, 9rem) 7rem;
-  overflow: hidden;
+.hero{
+   position:relative;
+   overflow:hidden;
+   background:linear-gradient(
+   135deg,
+   #faf6f1 0%,
+   var(--cor-bege) 45%,
+   #f4ece3 100%
+   );
+   padding-block:7rem;
 }
 
 .hero__curve {
@@ -340,23 +340,29 @@ p {
   height: 100%;
 }
 
-.hero__inner {
-  position: relative;
-  max-width: 720px;
-  text-align: left;
+.hero__inner{
+   position:relative;
+   max-width:700px;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   min-height:500px;
 }
 
-.hero__title {
-  font-size: clamp(2.8rem, 5vw + 1rem, 4.5rem);
-  margin-bottom: 1.25rem;
-  color: var(--cor-bordo);
+.hero__title{
+   font-size:clamp(3rem,6vw,5rem);
+   line-height:1.08;
+   letter-spacing:-1px;
+   color:var(--cor-bordo);
+   margin-bottom:1.6rem;
+   max-width:700px;
 }
 
-.hero__text {
-  font-size: 1.08rem;
-  max-width: 620px;
-  line-height: 1.9;
-  margin-bottom: 2.25rem;
+.hero__text{
+   font-size:1.12rem;
+   line-height:1.9;
+   max-width:620px;
+   margin-bottom:2.5rem;
 }
 
 .hero__actions {
