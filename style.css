@@ -804,6 +804,33 @@ line-height:1.8;
 }
 
 /* =========================================================
+   CTA antes do Footer
+   ========================================================= */
+
+.cta-footer{
+   background:var(--cor-bege);
+   padding:5rem 0;
+   text-align:center;
+   border-top:1px solid var(--cor-bege-escuro);
+}
+
+.cta-footer__title{
+   max-width:650px;
+   margin:0 auto 1rem;
+}
+
+.cta-footer__title::after{
+   left:50%;
+   transform:translateX(-50%);
+}
+
+.cta-footer__text{
+   max-width:600px;
+   margin:0 auto 2rem;
+   font-size:1.02rem;
+}
+
+/* =========================================================
    Footer
    ========================================================= */
 .footer {
