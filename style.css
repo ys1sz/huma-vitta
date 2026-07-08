@@ -340,13 +340,9 @@ p {
   height: 100%;
 }
 
-.hero__inner{
-   position:relative;
-   max-width:700px;
-   display:flex;
-   flex-direction:column;
-   justify-content:center;
-   min-height:500px;
+.hero__inner,
+.split__content{
+    min-width:0;
 }
 
 .hero__title{
@@ -878,11 +874,21 @@ line-height:1.8;
 /* =========================================================
    Responsivo
    ========================================================= */
-@media (max-width: 860px) .benefits{
-   grid-template-columns:1fr;
+@media (max-width: 860px) {
+
+  .benefits{
+    grid-template-columns:1fr;
+  }
+
+   .split__content{
+    width:100%;
 }
 
-{
+.split__content h2{
+    font-size:2rem;
+    word-break:normal;
+}
+   
   .split,
   .split--reverse {
     grid-template-columns: 1fr;
@@ -927,18 +933,18 @@ line-height:1.8;
   }
 
   .nav__list {
-   display:flex;
-   flex-direction:column;
-   align-items:flex-start;
-   gap:1rem;
-   width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+    width:100%;
   }
 
   .nav__link {
-    display: block;
-    width: 100%;
-    padding-block: 12px;
-    font-size: 1.05rem;
+    display:block;
+    width:100%;
+    padding-block:12px;
+    font-size:1.05rem;
   }
 
   .nav__sub {
@@ -949,40 +955,23 @@ line-height:1.8;
     box-shadow: none;
     display: none;
     width: 100%;
-    padding-left: 0.5rem;
+    padding-left: .5rem;
   }
 
   .nav__item--has-sub.is-open .nav__sub {
-    display: block;
+    display:block;
   }
 
-  .nav-toggle.is-open span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+  .nav-toggle.is-open span:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
   }
 
-  .nav-toggle.is-open span:nth-child(2) {
-    opacity: 0;
+  .nav-toggle.is-open span:nth-child(2){
+    opacity:0;
   }
 
-  .nav-toggle.is-open span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-}
-
-@media (max-width: 520px) {
-  .cards {
-    grid-template-columns: 1fr;
+  .nav-toggle.is-open span:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
   }
 
-  .card--spacer {
-    display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
