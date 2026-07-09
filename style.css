@@ -340,10 +340,9 @@ p {
 
 .hero__inner{
     position:relative;
-    max-width:720px;
-    width:100%;
-    text-align:left;
-    z-index:2;
+    max-width:900px;
+    margin:0 auto;
+    text-align:center;
 }
 
 .split__content{
@@ -358,24 +357,23 @@ p {
 .hero__text{
    font-size:1.12rem;
    line-height:1.9;
-   max-width:620px;
-   margin-bottom:2.5rem;
+   max-width:720px;
+   margin:0 auto 2.5rem;
 }
 
-.hero__actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.hero__actions{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
 }
 
 .hero__trust{
    display:flex;
+   justify-content:center;
    gap:2rem;
    flex-wrap:wrap;
    margin-top:2rem;
-   font-size:.92rem;
-   font-weight:500;
-   color:var(--cor-marrom);
 }
 
 /* =========================================================
