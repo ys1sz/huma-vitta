@@ -913,6 +913,54 @@ line-height:1.8;
    align-items:center;
 }
 
+/*=============================
+  Botão WhatsApp
+==============================*/
+
+.whatsapp-float{
+
+position:fixed;
+
+right:28px;
+bottom:28px;
+
+width:62px;
+height:62px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:#fff;
+
+box-shadow:
+0 12px 30px rgba(0,0,0,.18);
+
+transition:
+transform .30s ease,
+box-shadow .30s ease;
+
+z-index:9999;
+text-decoration:none;
+}
+
+.whatsapp-float svg{
+   width:32px;
+   height:32px;
+}
+
+.whatsapp-float:hover{
+   transform:
+   translateY(-4px)
+   scale(1.08);
+   box-shadow:
+   0 18px 40px rgba(37,211,102,.35);
+}
+   
 }
 /* =========================================================
    Responsivo
@@ -1050,4 +1098,36 @@ line-height:1.8;
 .reveal.show{
     opacity:1;
     transform:none;
+}
+
+.whatsapp-float{
+   width:56px;
+   height:56px;
+   right:18px;
+   bottom:18px;
+}
+
+.whatsapp-float svg{
+   width:28px;
+   height:28px;
+}
+
+@keyframes whatsappPulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.06);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.whatsapp-float{
+   animation:whatsappPulse 2.8s ease-in-out infinite;
 }
