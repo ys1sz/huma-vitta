@@ -813,9 +813,10 @@ line-height:1.8;
   color: var(--cor-bordo);
 }
 
-.icon svg {
-  width: 100%;
-  height: 100%;
+.icon svg{
+    width:22px;
+    height:22px;
+    display:block;
 }
 
 /* =========================================================
