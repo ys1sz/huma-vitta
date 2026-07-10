@@ -799,24 +799,28 @@ line-height:1.8;
 }
 
 /* Ícones das formas de contato */
-.icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.icon{
   width:42px;
   height:42px;
 
-  background:var(--cor-bege);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
+  flex:0 0 42px;
+
+  background:var(--cor-bege);
   border-radius:50%;
-  flex-shrink: 0;
-  color: var(--cor-bordo);
+  color:var(--cor-bordo);
+
+  overflow:hidden;
 }
 
 .icon svg{
-    width:22px;
-    height:22px;
+    width:20px;
+    height:20px;
     display:block;
+    flex:none;
 }
 
 /* =========================================================
