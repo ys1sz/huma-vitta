@@ -1082,10 +1082,15 @@ line-height:1.8;
 }
 
 .whatsapp-float svg{
-    width:30px;
-    height:30px;
+    width:28px;
+    height:28px;
+
     display:block;
-    fill:currentColor;
+    flex:none;
+
+    position:relative;
+    left:1px;
+    top:1px;
 }
 
 .whatsapp-float:hover{
