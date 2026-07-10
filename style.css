@@ -352,6 +352,7 @@ p {
 .hero__title{
     font-size:clamp(2.8rem,4vw + 1rem,4rem);
     line-height:1.05;
+    margin-bottom:2rem;
 }
 
 .hero__text{
